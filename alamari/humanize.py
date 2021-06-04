@@ -14,15 +14,15 @@ def number(any_num: Number, padding: Optional[bool] = False) -> str:
         padding (bool, optional): Defaults to False. If padding is required in any number less than 10.
 
     Syntax:
-    >>> humanize_number(any_num, padding)
+    >>> number(any_num, padding)
 
     Example:
 
-    `any_num` = `9`, `padding` = `True`
-    >>> 09
+    >>> number(any_num = 9, padding = True)
+    09
 
-    `any_num` = `9.54`, `padding` = `True`
-    >>> 09
+    >>> number(any_num = 9.54, padding = True)
+    09
 
     Returns:
         str: returns a string in comma separated number
@@ -44,8 +44,8 @@ def date(any_date: datetime) -> str:
 
     Example:
 
-    `any_date` = `2021-06-02 14:55:34.185035`
-    >>> 2 hours ago
+    >>> date(any_date = 2021-06-02 05:55:55.185035)
+    2 hours ago
 
     Args:
         any_date (datetime): any date with datetime format
@@ -60,12 +60,12 @@ def nepal_date(local_date: datetime) -> str:
     """Converts datetime into humanized form (NPT)
 
     Syntax:
-    >>> date(local_date)
+    >>> nepal_date(local_date)
 
     Example:
 
-    `local_date` = `2021-06-02 14:55:34.185035`
-    >>> 2 hours ago
+    >>> nepal_date(local_date = 2021-06-02 05:55:55.185035)
+    just now
 
     Args:
         local_date (datetime): any local date with datetime format
