@@ -1,9 +1,9 @@
-from alamari.humanize import Number
+# from humanize import Number
 import nepali_roman as nr
 import re
 
 
-def to_integer(given_input: str) -> Number:
+def to_integer(given_input: str):
     """
     Finds the number in a given input(should be a string with numbers) using regular expression.
 
@@ -32,3 +32,14 @@ def to_integer(given_input: str) -> Number:
         return 0  # default value
     return given_input  # if not string type
 
+
+def to_roman(given_text: str) -> str:
+    """Converts the given devanagiri text into roman form
+
+    Args:
+        given_text (str): devanagiri text
+
+    Returns:
+        str: romanized text
+    """
+    return nr.romanize_text(given_text)
