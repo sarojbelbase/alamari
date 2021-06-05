@@ -5,3 +5,4 @@ __pycache__/
 /cover
 /docs/_build
 venv/
+requirements.txt
