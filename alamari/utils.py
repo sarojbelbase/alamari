@@ -42,3 +42,12 @@ def parse_date(given_string: str) -> datetime:
     """
     from dateutil.parser import parse
     return parse(given_string)
+
+
+def crop_image(image):
+    # Image object : Pillow Image
+    # crops the image from the center
+    full_width, full_height = image.size
+    width = min(image.size)
+    height = min(image.size)
+    return image.crop(((full_width - width) // 2, (full_height - height) // 2, (full_width + width) // 2, (full_height + height) // 2))
