@@ -51,3 +51,24 @@ def crop_image(image):
     width = min(image.size)
     height = min(image.size)
     return image.crop(((full_width - width) // 2, (full_height - height) // 2, (full_width + width) // 2, (full_height + height) // 2))
+
+
+def ordinalize(given_number: int) -> str:
+    """Ordinalize the number from the given number
+
+    Args:
+        given_number (int): integer number
+
+    Example:
+    >>> ordinalize(34)
+    '34th'
+
+    Returns:
+        str: string in ordinal form
+    """
+    suffix = ["th", "st", "nd", "rd"]
+    thenum = int(given_number)
+    if thenum % 10 in [1, 2, 3] and thenum not in [11, 12, 13]:
+        return f'{thenum}{suffix[thenum % 10]}'
+    else:
+        return f'{thenum}{suffix[0]}'
