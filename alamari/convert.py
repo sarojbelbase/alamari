@@ -1,6 +1,4 @@
-# from humanize import Number
-import nepali_roman as nr
-import re
+from datetime import date
 
 
 def to_integer(given_input: str):
@@ -24,9 +22,9 @@ def to_integer(given_input: str):
     Returns:
         Number: returns number in a comma separated form if found else returns 0
     """
-
+    from re import findall
     if isinstance(given_input, str):
-        match = re.findall('\d+', given_input)
+        match = findall('\d+', given_input)
         if match:
             return ",".join(match)
         return 0  # default value
@@ -42,4 +40,18 @@ def to_roman(given_text: str) -> str:
     Returns:
         str: romanized text
     """
+    import nepali_roman as nr
     return nr.romanize_text(given_text)
+
+
+def to_nepali_miti(english_date: date) -> date:
+    """Converts english formmated date (international date) into nepali miti
+
+    Args:
+        english_date (date): international date
+
+    Returns:
+        date: returns nepali date in YY-M-D
+    """
+    from nepali_datetime import date as nepdate
+    return nepdate.from_datetime_date(english_date)
