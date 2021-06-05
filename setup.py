@@ -25,6 +25,7 @@ if __name__ == '__main__':
         packages=find_packages(exclude=[
             '*.__pycache__', 'venv']),
         long_description=long_description,
+        long_description_content_type='text/markdown',
         install_requires=['arrow', 'nepali-datetime',
                           'nepali-roman', 'python-dateutil', 'requests'],
         setup_requires=[],
