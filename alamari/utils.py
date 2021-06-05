@@ -74,12 +74,12 @@ def ordinalize(given_number: int) -> str:
         return f'{thenum}{suffix[0]}'
 
 
-def pluralize(given_noun: str, quantity: int, suffix: str = None) -> str:
+def pluralize(given_noun: str, quantity: int = 2, suffix: str = None) -> str:
     """Pluralize the given noun with suitable suffix
 
     Args:
         given_noun (str): string to be pluralized
-        quantity (int): quantity to be pluralized
+        quantity (int): quantity to be pluralized (defaults to 2)
         suffix (str, optional): custom suffix to be used if not specified before (defaults to None)
 
     Returns:
