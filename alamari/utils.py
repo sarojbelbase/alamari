@@ -72,3 +72,29 @@ def ordinalize(given_number: int) -> str:
         return f'{thenum}{suffix[thenum % 10]}'
     else:
         return f'{thenum}{suffix[0]}'
+
+
+def pluralize(given_noun: str, quantity: int, suffix: str = None) -> str:
+    """Pluralize the given noun with suitable suffix
+
+    Args:
+        given_noun (str): string to be pluralized
+        quantity (int): quantity to be pluralized
+        suffix (str, optional): custom suffix to be used if not specified before (defaults to None)
+
+    Returns:
+        str: string in plural form
+    """
+    from re import search, sub
+    if quantity > 1:
+        if search('[sxz]$', given_noun):
+            return sub('$', 'es', given_noun)
+        elif search('[^aeioudgkprt]h$', given_noun):
+            return sub('$', 'es', given_noun)
+        elif search('[aeiou]y$', given_noun):
+            return sub('y$', 'ies', given_noun)
+        else:
+            if suffix is not None:
+                return given_noun + suffix
+            return given_noun + 's'
+    return given_noun
