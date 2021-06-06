@@ -1,10 +1,10 @@
 # Alamari
 
-### A typical package to get all your utilities
+### A typical package to get all your utilities (with AI capabilities)
 
-The package was invented out of necessity, out of boredom and above all due to need (I'm serious).
+This package was invented out of necessity, out of boredom & above all due to need (I'm serious).
 
-"A collection of utils that you might not require but might need."
+##### "A collection of utils that you might not require but might need."
 
 > Bored Me, 2021
 
@@ -16,7 +16,7 @@ The package was invented out of necessity, out of boredom and above all due to n
 >>> import alamari
 ```
 
-ANS: Glad you thought. You get this beautifully named package called `alamari`. Isn't this word beautiful? Just think about it, you get to import this beautifully-named-and-thought-out package inside your side projects. Now you maybe wondering, how did this guy knows about my 213th side project? Well, this is due to this package which has `telemetry` installed by default. It tracks user when they install this package. I know I'm getting nowhere here, actually that's how is this package, it lets you nowhere (just kidding). Skip to the next question.
+ANS: Glad you thought. First of all, you get this beautifully named package called `alamari`. Isn't this word beautiful? Just think about it, you get to import this package inside your side projects. Now you maybe wondering, how did this guy knows about my 213th side project? Because this package which has `telemetry` installed by default. It tracks any developer when they install this beautifully-named-and-thought-out package. I know I'm getting nowhere here, actually that's how is this package, it lets you nowhere (just kidding). Skip to the next line.
 
 ```python
 
@@ -86,14 +86,18 @@ $ pip install alamari
 
 ## Documentation
 
-Sorry, complete documentations cannot be found. You need to go inside the alamari folder and peek inside each files. You have my permission to copy the code and modify like you want. But don't. I made this package for a reason. Remember, every time you copy my code, I'll receive a alert (telemetry magic)
+Here's a thing mate. I would like to be open about i.e I didn't prepare any documents for it. You need to go inside the alamari folder and peek inside each files. You have my permission to copy the code and modify the way you want. But don't. I made this package for a reason & this exist for a reason. Why would you not respect my reason? Remember, every time you copy my code, I get a notification about your endeavour (telemetry magic)
 
 ## Contribution
 
-For contributing this blissful package, please add all the utils you would love to see. Also add comments and docstrings to help people navigate through the pain they might hold for several years & I don't want to be remembered that way. Please send all the issues and pull requests.
+For being part of this blissful package, please add all the utils you want if you're tired of typing and copying again and again. While adding your utils please also add comments & docstrings to help people navigate through the pain they might hold for several years & I don't want to be remembered that way. Send all your issues and pull requests my way. Peace.
 
-NOTE: Please don't send your issues and pull-requests during fridays. You may don't want to disturb me during my favorite day. If you do that, I'll press this auto-destroy-button & this package will be just a stardust.
+NOTE: Please don't send your issues and pull-requests during fridays. You may don't want to disturb me during my favorite day. If you do that, I'll press this auto-destroy-button that I had built the other day & this package will be just a stardust.
 
 Let's see who wins, people who think this package is a absolute trash press that `star` button & people who think the other way press `fork` button and contribute.
+
+## Gratitude
+
+Developers who came here seeing their package being used by a guy with terrible coding pattern, I want to say that I'm forever grateful for you and your existence. Long live OSS.
 
 ### Made with ❤️ in Nepal.
