@@ -1,8 +1,7 @@
-name: Publish Package
- 
+name: publish package
+
 on:
-  # Triggers the workflow when a release is created
-  release: 
+  release:
     types: [created]
   workflow_dispatch:
 
@@ -12,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup python
+      - name: Set up python
       - uses: actions/setup-python@v2
         with:
           python-version: 3.7
@@ -22,10 +21,10 @@ jobs:
           python3 -m pip install --upgrade pip
           python3 -m pip install setuptools wheel twine
 
-      - name: Builds and uploads to PyPI
-        run: |
-          python3 setup.py sdist bdist_wheel
-          python3 -m twine upload dist/*
+      - name: Build & upload to PyPI
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
+        run: |
+          python3 setup.py sdist bdist_wheel
+          python3 -m twine upload dist/*
