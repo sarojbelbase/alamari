@@ -10,11 +10,11 @@ def to_integer(given_input: str):
     >>> to_integer('1')
     1
     >>> to_integer('abc123')
-    123
+    '123'
     >>> to_integer('abc123abc')
-    123
+    '123'
     >>> to_integer('abc123abc456')
-    123,456
+    '123,456'
 
     Args:
         given_input (str): any text with numbers in it
@@ -32,10 +32,15 @@ def to_integer(given_input: str):
 
 
 def to_roman(given_text: str) -> str:
-    """Converts the given devanagiri text into roman form
+    """Converts the given devanagari text into roman form
 
     Args:
-        given_text (str): devanagiri text
+        given_text (str): devanagari text
+
+    Example:
+
+    >>> to_roman('तनहुँ ब्यास नगरपालिका सागेकी २२ वर्षीया युवतीकी एक जना आमाजु पर्ने थिइन्')
+    'tanahun byaasa nagarapaalikaa saageki 22 warsiyaa yuwatiki eka janaa amaaju parne thiin'
 
     Returns:
         str: romanized text
@@ -49,6 +54,10 @@ def to_nepali_miti(english_date: date) -> date:
 
     Args:
         english_date (date): international date
+
+    Example:
+    >>> to_nepali_miti(2021, 6, 7)
+    '2078-02-24'
 
     Returns:
         date: returns nepali date in YY-M-D

@@ -27,7 +27,7 @@ ANS: Glad you thought. First of all, you get this beautifully named package call
 >>> to_integer('abc123abc456')
 >>> '123,456'
 
-# convert to roman from devanagiri
+# convert to roman from devanagari
 >>> to_roman('तनहुँ ब्यास नगरपालिका सागेकी २२ वर्षीया युवतीकी एक जना आमाजु पर्ने थिइन्')
 >>> 'tanahun byaasa nagarapaalikaa saageki 22 warsiyaa yuwatiki eka janaa amaaju parne thiin'
 
@@ -44,7 +44,7 @@ ANS: Glad you thought. First of all, you get this beautifully named package call
 
 # replace something from a text if you feel awkward
 >>> replace('I love this alamari package', 'alamari', 'daraaazzz')
->>> I love this daraaazzz package
+>>> 'I love this daraaazzz package'
 
 # get datetime object from a string or text
 >>> parse_date('2021, June 5th 5:55')

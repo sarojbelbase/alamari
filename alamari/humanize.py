@@ -19,10 +19,13 @@ def number(any_num: Number, padding: Optional[bool] = False) -> str:
     Example:
 
     >>> number(any_num = 9, padding = True)
-    09
+    '09'
 
     >>> number(any_num = 9.54, padding = True)
-    09
+    '09'
+
+    >>> number(any_num = 12345675)
+    '1,23,45,675'
 
     Returns:
         str: returns a string in comma separated number
@@ -45,13 +48,13 @@ def date(any_date: datetime) -> str:
     Example:
 
     >>> date(any_date = 2021-06-02 05:55:55.185035)
-    2 hours ago
+    '2 hours ago'
 
     Args:
         any_date (datetime): any date with datetime format
 
     Returns:
-        [type]: Returns date in humanized form
+        str: Returns date in humanized form
     """
     return arrow.get(any_date).to('US/Pacific').humanize()
 
@@ -65,12 +68,17 @@ def nepal_date(local_date: datetime) -> str:
     Example:
 
     >>> nepal_date(local_date = 2021-06-02 05:55:55.185035)
-    just now
+    'just now'
 
     Args:
         local_date (datetime): any local date with datetime format
 
+    Example:
+
+    >>> replace('I love this alamari package', 'alamari', 'daraaazzz')
+    'I love this daraaazzz package'
+
     Returns:
-        [type]: Returns date in humanized form
+        str: Returns date in humanized form
     """
     return arrow.get(local_date).shift(minutes=-345).to('US/Pacific').humanize()
