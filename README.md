@@ -25,11 +25,11 @@ ANS: Glad you thought. You get this beautifully named package called `alamari`. 
 # convert to integer with a smart AI (lol)
 >>> from alamari.convert import *
 >>> to_integer('abc123abc456')
->>> 123,456
+>>> '123,456'
 
 # convert to roman from devanagiri
 >>> to_roman('तनहुँ ब्यास नगरपालिका सागेकी २२ वर्षीया युवतीकी एक जना आमाजु पर्ने थिइन्')
->>> tanahun byaasa nagarapaalikaa saageki 22 warsiyaa yuwatiki eka janaa amaaju parne thiin
+>>> 'tanahun byaasa nagarapaalikaa saageki 22 warsiyaa yuwatiki eka janaa amaaju parne thiin'
 
 # convert to nepali date from english date
 >>> to_nepali_miti(2021, 6, 7)
@@ -39,7 +39,7 @@ ANS: Glad you thought. You get this beautifully named package called `alamari`. 
 
 # checks if url resolves (sorry for bad example but lol)
 >>> from alamari.utils import *
->>> url_resolves('https://github.com/sidbelbase/alamari/raw/main/README.md')
+>>> url_resolves('https://raw.githubusercontent.com/sidbelbase/alamari/master/README.md')
 >>> False
 
 # replace something from a text if you feel awkward
@@ -47,12 +47,12 @@ ANS: Glad you thought. You get this beautifully named package called `alamari`. 
 >>> I love this daraaazzz package
 
 # get datetime object from a string or text
->>> parse_date('In year 2021, a great guy made a package in June fifth at 5:55')
->>> datetime(2021,6,5,5,55,0)
+>>> parse_date('2021, June 5th 5:55')
+>>> datetime(2021, 6, 5, 5, 55)
 
 # pluralize the given singular unit
 >>> pluralize('knife')
->>> knives
+>>> 'knifes'
 
 # ordinalize the given number (idk why i added this util)
 >>> ordinalize(34)
@@ -71,11 +71,11 @@ ANS: Glad you thought. You get this beautifully named package called `alamari`. 
 
 # humanize datetime stuffs
 >>> date(any_date = '2021-06-07 05:55:55.185035')
->>> 5 hours ago
+>>> '5 hours ago'
 
 # humanize nepali datetime
->>> date(local_date = '2021-06-07 05:55:55.185035')
->>> just now
+>>> nepal_date(local_date = '2021-06-07 05:55:55.185035')
+>>> 'just now'
 ```
 
 ## Installation
