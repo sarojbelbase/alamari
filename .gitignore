@@ -2,6 +2,7 @@ __pycache__/
 /.eggs
 /*.egg-info
 /build
+/dist
 venv/
 requirements.txt
 run.sh
