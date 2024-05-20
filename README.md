@@ -39,7 +39,7 @@ ANS: Glad you thought. First of all, you get this beautifully named package call
 
 # checks if url resolves (sorry for the bad example but lol)
 >>> from alamari.utils import *
->>> url_resolves('https://raw.githubusercontent.com/sidbelbase/alamari/master/README.md')
+>>> url_resolves('https://raw.githubusercontent.com/sarojbelbase/alamari/master/README.md')
 >>> False
 
 # replace something from a text if you feel awkward

@@ -10,7 +10,7 @@ with open('alamari/__about__.py') as fp:
 if path.isfile('README.md'):
     long_description = open('README.md').read()
 else:
-    long_description = 'See https://github.com/sidbelbase/alamari#readme'
+    long_description = 'See https://github.com/sarojbelbase/alamari#readme'
 
 
 if __name__ == '__main__':
